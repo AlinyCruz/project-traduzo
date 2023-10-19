@@ -16,7 +16,6 @@ ir = "traduzo.__main__:main"
 minversion = "6.0"
 addopts = "-vv --capture=fd"
 accept_xfail = true
-testpaths = ["tests"]
 filterwarnings = ["ignore::pytest.PytestDeprecationWarning"]
 pythonpath = ["src"]
 env = ["DB_NAME = test_db_traduzo"]
@@ -57,7 +56,6 @@ test = [
     "pytest==7.3.1",
     "pytest-cov==4.1.0",
     "pytest-json==0.4.0",
-    "pytest-dependency@git+https://github.com/betrybe/pytest-dependency@311e45f9c512e89e6832f79047c6c29bc5a9b0f0"
 ]
 alltest = [
     "traduzo[test]",
